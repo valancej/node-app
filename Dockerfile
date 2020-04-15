@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi7/ubi:latest
 USER root
-LABEL maintainer="Jeremy Valancee"
+LABEL maintainer="Jeremy Valance"
 # Update image
 RUN yum update --disableplugin=subscription-manager -y && rm -rf /var/cache/yum
 RUN yum install --disableplugin=subscription-manager httpd -y && rm -rf /var/cache/yum
